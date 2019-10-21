@@ -19,6 +19,12 @@ import net.sf.jasperreports.engine.JRPrintImage;
 import net.sf.jasperreports.engine.export.JRPdfExporter;
 import net.sf.jasperreports.engine.export.JRPdfExporterTagHelper;
 
+/**
+ * This is a duplicate class of {@link JRPdfExporterTagHelper} class. It has
+ * some methods and fields added to support custom tag marking.
+ * 
+ * @author v.laluashvili
+ */
 public class TaggerJRPdfExporterTagHelper extends JRPdfExporterTagHelper {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(TaggerJRPdfExporterTagHelper.class);

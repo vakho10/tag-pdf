@@ -7,6 +7,12 @@ import java.util.Map;
 
 import com.lowagie.text.pdf.PdfName;
 
+/**
+ * This is a model object containing all the necessary data for tagging the
+ * document.
+ * 
+ * @author v.laluashvili
+ */
 public class TaggerModel {
 
 	private String rootTagName;

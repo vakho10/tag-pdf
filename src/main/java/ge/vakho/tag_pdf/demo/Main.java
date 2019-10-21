@@ -14,7 +14,7 @@ import org.apache.pdfbox.text.PDFMarkedContentExtractor;
 
 import com.lowagie.text.pdf.PdfName;
 
-import ge.vakho.tag_pdf.service.JasperService;
+import ge.vakho.tag_pdf.service.TaggerService;
 import ge.vakho.tag_pdf.service.TaggerModel;
 import ge.vakho.tag_pdf.service.TaggerModel.Parameter;
 
@@ -33,7 +33,7 @@ public class Main {
 		taggerModel.setParameters(parameters);
 
 		Path path = Paths.get("tagged.pdf");
-		Files.write(path, new JasperService().generateTaggedDocument(taggerModel));
+		Files.write(path, new TaggerService().generateTaggedDocument(taggerModel));
 
 		// Read meta data :)
 		PDDocument pdDocument = null;
@@ -50,7 +50,7 @@ public class Main {
 				List<PDMarkedContent> markedContents = extractor.getMarkedContents();
 				for (PDMarkedContent mt : markedContents) {
 					System.out.println(mt.getTag());
-					System.out.println(mt.getActualText()); // Charset breaks when called concatenatedly :(
+					System.out.println(mt.getActualText()); // Charset breaks when called concatenated with UTF-8 :(
 					System.out.println();
 				}
 			} catch (IOException e) {

@@ -20,9 +20,15 @@ import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 import net.sf.jasperreports.export.SimplePdfExporterConfiguration;
 
-public class JasperService {
+/**
+ * Demo service class which generates tagged PDF document using *.jrxml template
+ * file.
+ * 
+ * @author v.laluashvili
+ */
+public class TaggerService {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(JasperService.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(TaggerService.class);
 
 	public byte[] generateTaggedDocument(TaggerModel taggerModel) throws IOException, JRException {
 
@@ -56,7 +62,7 @@ public class JasperService {
 	}
 
 	private JasperReport loadTemplate() throws IOException, JRException {
-		try (InputStream reportInputStream = JasperService.class.getResourceAsStream("/tagged.jrxml")) {
+		try (InputStream reportInputStream = TaggerService.class.getResourceAsStream("/tagged.jrxml")) {
 			JasperDesign jasperDesign = JRXmlLoader.load(reportInputStream);
 			return JasperCompileManager.compileReport(jasperDesign);
 		}

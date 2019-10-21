@@ -25,6 +25,12 @@ import net.sf.jasperreports.engine.type.ModeEnum;
 import net.sf.jasperreports.engine.util.JRStyledText;
 import net.sf.jasperreports.export.PdfReportConfiguration;
 
+/**
+ * This is a duplicate class of {@link JRPdfExporter} class. It has some methods
+ * and fields added to support custom tag marking.
+ * 
+ * @author v.laluashvili
+ */
 public class TaggerJRPdfExporter extends JRPdfExporter {
 
 	private TaggerModel taggerModel;
