@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tagged" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e7942fc7-1360-442b-83a2-24f885735af5">
+	<style name="Default Font Setter Style" isDefault="true" fontName="SylfaenFontExtension" fontSize="10"/>
+	<parameter name="param1" class="java.lang.String"/>
+	<parameter name="param2" class="java.lang.String"/>
+	<parameter name="param3" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79" uuid="625e2160-adc8-4cf2-b4b3-ef83ce1265f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[სატესტო დატაგული PDF დოკუმენტი]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="214" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="46" uuid="c36f4fb7-c426-42e7-889d-9592b7c1da3c"/>
+				<textElement markup="html"/>
+				<text><![CDATA[სტატიკური ტექსტი: ლორემ იპსუმ დააჩქაროს მოეწვიათ საჭმელი, ნაკეთები ქალაჩუნები მილორდი დინმა სახელმძღვანელოც მსჯავრდადებულთა მქონდესო დამალეწა. დეკლარაციაზე შეგახოთ დედებიც მოეწვიათ თეძოზე უკლებლად ავირჩიეთ. ვწერ საცოდავობას ხაზზეა ბიჭიკოც შეიგინა დაარქვა მელანიო მოგვიტანა პანფილოვის, ეხვევა მსჯავრდადებულთა საჭმელი დეკლარაციაზე პროფესია. აწმყოს მოგვიტანა ჰეკლბერიც წასმული მივაგენით ეხვევა სამარადისოდ, დამბლასავით ფრთხილის გადაადგილდეთ. ჩავიბარებო ეხვევა მიაფარა ფრთხილის ბეჩაობით შრი ილუსტრაციები მსჯავრდადებულთა აქციონ წარვუდგენთ.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="46" width="555" height="42" uuid="8189fa28-f0b3-48b5-a06a-dfb89c6b26d4"/>
+				<textFieldExpression><![CDATA["ტექსტური ველი: " + "ვსინჯავ ჩაერევი სიმსუბუქით ხელიდამ, ღიჯინი შეცდომები ქუთაისიდან. მოვიკვნიტოთ დავალებაზე შრომას უდგნენ ანცობაში მჩატე ბარიდან მარილინთან ეთქვათ, დასავლური ყაჩაღებმა პატივცემული გაგაკოტრებ სდგამდნენ. ფალავანი დედამისი დრონში აქიმი ლაშქრობის გაიძვერა მჩატე ამოიღოს ჩამოჯდეს გაგაკოტრებ ენერგიაც მისულიყვნენ. ცოდვების აკნატუნებდნენ განებანა შტატების ეწეოდა პაწაწკინტელა. დამტოვე გაგაკოტრებ ეკითხათ ჩაერევი ცხოვრებისკენ ჩამოჯდეს ლანძღვააო, პატივცემული გაიძვერა ცოდვების უძვირფასესად ტალასიის ბარიდან ამოიღოს შეგაწუხოს."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="88" width="555" height="42" uuid="425fa593-83ba-4415-93b4-e5f92e7ce9b2"/>
+				<textFieldExpression><![CDATA[$P{param1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="130" width="555" height="42" uuid="939d0d81-47bd-4591-a038-091db0ff4996"/>
+				<textFieldExpression><![CDATA[$P{param2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="172" width="555" height="42" uuid="48696f95-ca84-4173-b3f8-c3695a01dbaa"/>
+				<textFieldExpression><![CDATA[$P{param3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -27,8 +27,8 @@ public class Main {
 		taggerModel.setRootTagName("RootTagName");
 
 		List<Parameter> parameters = new ArrayList<>();
-		parameters.add(new Parameter("param1", "Some unique value1 :) დაიკო", true, "Taggo1", PdfName.TEXT));
-		parameters.add(new Parameter("param2", "Some unique value2 :) Мой ниггер!", true, "Taggo2", PdfName.TEXT));
+		parameters.add(new Parameter("param1", "Some unique value1 :)", true, "Tag1", PdfName.TEXT));
+		parameters.add(new Parameter("param2", "Some unique value2 :)", true, "Tag2", PdfName.TEXT));
 		parameters.add(new Parameter("param3", "Some unique untagged value3"));
 		taggerModel.setParameters(parameters);
 
